@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 8px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1e3a8a; 
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #cbd5e1; 
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #1e3a8a; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #374151; 
+}
+
+#boton-copiar {
+    background-color: #4b5563; 
+    width: 100%;
+    margin-top: 10px;
+}
+
+#texto-salida {
+    background-color: #00040a; 
+    border: none;
+    color: #1e8a35; 
+    font-weight: bold;
+    
+}
+
+@media (max-width: 500px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-section {
+    flex: 1; 
+    margin-right: 10px;
+}
+
+.image-section img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px; 
+    margin: 0;
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; 
+    }
+
+    .text-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .image-section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+footer {
+    background-color: #1e8a35; 
+    color: white; 
+    text-align: center; 
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
